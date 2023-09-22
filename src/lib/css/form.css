@@ -1,0 +1,49 @@
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='number'],
+input[type='date'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='week'] {
+	@apply form-input;
+}
+textarea {
+	@apply form-textarea;
+}
+select {
+	@apply form-select;
+}
+select[multiple] {
+	@apply form-multiselect;
+}
+
+input[type='checkbox'] {
+	@apply form-checkbox;
+}
+
+input[type='radio'] {
+	@apply form-radio;
+}
+
+.form-line {
+	@apply mt-4;
+}
+
+.form-line .form-line {
+	@apply mt-2;
+}
+
+label {
+	@apply flex flex-col gap-2;
+}
+
+button[disabled],
+input[disabled] {
+	opacity: 0.5;
+	piinter-events: none;
+}
